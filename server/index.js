@@ -2,6 +2,13 @@ import express from 'express';
 import cors from 'cors';
 import { Sequelize } from 'sequelize';
 import fetch from 'node-fetch';
+import * as path from 'path'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 
 // Provision database
 const sequelize = new Sequelize('database', '', '', {
