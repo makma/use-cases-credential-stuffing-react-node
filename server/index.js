@@ -33,7 +33,10 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-app.post('/authenticate', async (req, res) => {
+app.use(express.static(path.join(__dirname, 'build')));
+
+
+app.post('api/authenticate', async (req, res) => {
   // Get requestId and visitorId from the client
   const visitorId = req.body.visitorId;
   const requestId = req.body.requestId; //.replace(/.$/, 'a');
