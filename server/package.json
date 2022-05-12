@@ -1,0 +1,18 @@
+{
+  "name": "node-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs-pro": "^3.6.2",
+    "@fingerprintjs/fingerprintjs-pro-server-api": "^1.0.5",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.4",
+    "npm": "^8.9.0",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.8"
+  }
+}
